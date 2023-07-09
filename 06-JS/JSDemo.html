@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script>
+            function myFirstFunction(){
+                //alert("Welcome to JS");
+                setTimeout(function(){
+                    alert("Wait over");
+                },5000,);
+                //alert("Wait over");
+            }
+            function outputFunctions(){
+                document.write("<h4>Document is changed</h4>")
+            }
+            function outputConsole(){
+                var x = 10;
+                var y  =20;
+                var z = x + y;
+                console.log(z);
+
+                /*
+                var x = 10;
+undefined
+typeof(x);
+'number'
+x = "This is a new class"
+'This is a new class'
+typeof(x)
+'string'
+x = false;
+false
+typeof(x)
+'boolean'
+var emp = { "name" : "liyon", "age" : 32 } 
+undefined
+typeof(emp)
+'object'
+emp.name
+'liyon'
+emp.age
+32
+emp.name = "harry potter"
+'harry potter'
+emp
+{name: 'harry potter', age: 32}
+emp.salary = 5000;
+5000
+emp
+{name: 'harry potter', age: 32, salary: 5000}
+                */
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="myFirstFunction()">
+            Click Me
+        </button>
+        <button onclick="alert('Welcome to UI5')">
+            Click Me2
+        </button>
+        <button onclick="outputFunctions()">
+            Click Me3
+        </button>
+        <button onclick="outputConsole()">
+            Click Me4
+        </button>
+    </body>
+</html>
