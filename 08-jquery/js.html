@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="myFunctions.js"></script>
+        <style>
+            .box{
+                width: 180px;
+                float: left;
+                margin: 10 px;
+            }
+            .box-title{
+                color: red;
+                border : 1px solid black;
+                text-align: center;
+            }
+            .box-content{
+                background-color: yellow;
+                color : blue;
+                font-family: cursive;
+                border: 1px solid black;
+                padding : 4px;
+            }
+            li{
+                float : left;
+                padding : 10px;
+                border : 1px solid maroon;
+                background-color: white;
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color: yellowgreen;
+                font-weight: bold;
+            }
+            li:hover{
+                background-color: black;
+                color : white;
+                text-transform: uppercase;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+                opacity: 40%;
+            }
+            .img{
+                float: left;
+                padding: 3px;
+            }
+            img:hover{
+                opacity: 100%;
+                border: 3px solid red;
+                height: 250px;
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body style="background-color: turquoise;">
+        <div class="box">
+            <div class="box-title">
+                <h1>What is HTML?</h1>
+            </div>
+            <div class="box-content">
+                <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>               
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-title">
+                <h1>What is CSS?</h1>
+            </div>
+            <div class="box-content">
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]</p>     
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-title">
+                <h1>What is JS?</h1>
+            </div>
+            <div class="box-content">
+                <p>JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+        <div>
+            <button onclick="onMagic()">Magic</button>
+            <button onclick="onHide()">Hide</button>
+            <button onclick="onShow()">Show</button>
+            <button onclick="onAnimate()">Animate</button>
+        </div>
+        <div style="clear: left;"></div>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=7-tmA8szUJ8">ABAP and Fiori</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7-tmA8szUJ8">S/4 HANA</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7-tmA8szUJ8">Analytics Cloud</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7-tmA8szUJ8">Cloud Platform</a></li>
+            </ul>
+        <div style="clear: left;"></div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg">
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg">
+            </div>
+            <div class="img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+            </div>
+        <div style="clear: left;"></div>
+        <h2>Personal Details</h2>
+        <div>
+            <label>First Name</label>
+            <input>
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input>
+        </div>
+    </body>
+</html>

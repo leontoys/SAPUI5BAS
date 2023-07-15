@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function onLogin(){
+                //alert("clicked");
+                var userName = document.getElementById("inputUserName").value;
+                var password = document.getElementById("inputPassword").value;
+                if(userName==="admin" & password==="admin"){
+                    //alert("success");
+                    document.write("success");
+                }
+                else {
+                    //alert("error");
+                    document.write("error");
+                }
+                }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><label>User Name</label></td>
+                <td><input type="text"id="inputUserName"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"id="inputPassword"></td>
+            </tr>
+            <tr>
+                <td><button id="buttonLogin" onclick="onLogin()">Login</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

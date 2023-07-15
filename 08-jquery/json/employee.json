@@ -1,0 +1,45 @@
+{
+    "empStr" : {
+        "empId" : 100,
+        "empName" : "Abraham",
+        "age" : 30,
+        "sex" : "Male",
+        "salary" : 10000
+    },
+    "empTable" : [
+        {
+            "empId" : 200,
+            "empName" : "Betty",
+            "age" : 25,
+            "sex" : "Female",
+            "salary" : 20000
+        },
+        {
+            "empId" : 300,
+            "empName" : "Christy",
+            "age" : 35,
+            "sex" : "Male",
+            "salary" : 15000
+        },
+        {
+            "empId" : 400,
+            "empName" : "Della",
+            "age" : 39,
+            "sex" : "Female",
+            "salary" : 40000
+        },
+        {
+            "empId" : 500,
+            "empName" : "Elizabeth",
+            "age" : 29,
+            "sex" : "Female",
+            "salary" : 50000
+        },{
+            "empId" : 600,
+            "empName" : "Francis",
+            "age" : 33,
+            "sex" : "Male",
+            "salary" : 25000
+        }
+    ]
+}
