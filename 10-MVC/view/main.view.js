@@ -1,16 +1,14 @@
 sap.ui.jsview("home.view.main", {  // 
    
     getControllerName: function() {
-       //return "home.controller.main";     // 
+       return "home.controller.main";     
     },
  
-    createContent: function() {
+    createContent: function(oController) {
 
        var oButton = new sap.m.Button("buttonClick",{
                                         text:"Hello JS View",
-                                        press : function(){
-                                            alert("Hello");
-                                        }
+                                        press : oController.clickMe
                                     });
 
        return oButton;
