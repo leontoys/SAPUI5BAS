@@ -8,7 +8,7 @@ sap.ui.jsview("home.view.main",{
         //step2 - now create an input field
         var oInput = new sap.m.Input("inputName",{
             description : "Enter some text here and click the button",
-            width : ""
+            submit : oController.onClick
         });
         //return oButton;
         return [oInput,oButton];
