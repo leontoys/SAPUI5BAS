@@ -8,7 +8,9 @@ sap.ui.define([
          
          //now we can create functions and then call these functions in the view
         onClick : function(){
-            alert("Hello"); //we have to call this function in the view using controller object
+            //alert("Hello"); //we have to call this function in the view using controller object
+            var oInput = sap.ui.getCore().byId("inputName");
+            alert(oInput.getValue());
         }                  
     });
 });
