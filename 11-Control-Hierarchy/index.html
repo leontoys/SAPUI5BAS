@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-theme="sap_bluecrystal"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-resourceroots='{
+                    "home" : "./"
+                }'
+                ></script>
+    </head>
+    <script>
+        //create a view of JS type
+        var oView = sap.ui.view({
+            viewName:"home.view.main",
+            type : "JS"
+        });
+        //place it in the div
+        oView.placeAt("content");
+    </script>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>
