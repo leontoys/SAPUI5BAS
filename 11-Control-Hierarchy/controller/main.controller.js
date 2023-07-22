@@ -10,7 +10,7 @@ sap.ui.define([
         onClick : function(){
             //alert("Hello"); //we have to call this function in the view using controller object
             var oInput = sap.ui.getCore().byId("inputName");
-            alert(oInput.getValue());
+            alert(oInput.getValue(gi));
         }                  
     });
 });
