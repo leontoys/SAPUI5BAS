@@ -2,8 +2,8 @@
             xmlns:mvc="sap.ui.core.mvc"
             xmlns="sap.m">
     <Label text="User Name"/>
-    <Input id="inputUserName" submit="onLogin"/>
+    <Input id="inputUserName"/>
     <Label text="Password"/>
-    <Input id="inputPassword" type="Password"/>
+    <Input id="inputPassword" type="Password" submit="onLogin"/>
     <Button id="buttonLogin" text="Login" press="onLogin"/>
 </mvc:View>
