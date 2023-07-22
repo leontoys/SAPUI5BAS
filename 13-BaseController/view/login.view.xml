@@ -1,0 +1,9 @@
+<mvc:View   controllerName="home.controller.login"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns="sap.m">
+    <Label text="User Name"/>
+    <Input id="inputUserName" submit="onLogin"/>
+    <Label text="Password"/>
+    <Input id="inputPassword" type="Password"/>
+    <Button id="buttonLogin" text="Login" press="onLogin"/>
+</mvc:View>

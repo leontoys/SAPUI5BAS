@@ -1,0 +1,6 @@
+<mvc:View controllerName="home.controller.main"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns="sap.m">
+    <Input id="inputName" description = "Enter your name here" submit="onClick"/>
+    <Button id="buttonClick" text="Click Me" press="onClick"/>
+</mvc:View>
