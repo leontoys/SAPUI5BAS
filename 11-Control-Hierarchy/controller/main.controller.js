@@ -8,9 +8,22 @@ sap.ui.define([
          
          //now we can create functions and then call these functions in the view
         onClick : function(){
+            alert("on click is called");
             //alert("Hello"); //we have to call this function in the view using controller object
             var oInput = sap.ui.getCore().byId("inputName");
-            alert(oInput.getValue(gi));
-        }                  
+            alert(oInput.getValue());
+        },
+        
+        //this is to test the attachPress
+        
+        enableButton:function(){
+            alert("enable Button is called");
+            //get button object
+            //var oView = this.getView();
+            var oButton = sap.ui.getCore().byId("buttonClick");
+
+            //subscribe press event dynamically
+            oButton.attachPress(this.onClick);
+        }
     });
 });

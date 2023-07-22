@@ -1,6 +1,12 @@
 <mvc:View controllerName="home.controller.main"
           xmlns:mvc="sap.ui.core.mvc"
           xmlns="sap.m">
+
+<!-- Thisis the orignal part - now let us use attach press event handler and see how it works !! -->    
     <Input id="inputName" submit="onClick"></Input>
-    <Button id="buttonClick" text="Click Me" press="onClick"></Button>
+    <Button id="buttonClick" text="Click Me" press="onClick"></Button> 
+
+<!--     <Input id="inputName" submit="enableButton"></Input>
+    <Button id="buttonClick" text="ClickMe"></Button> -->
+
 </mvc:View>
