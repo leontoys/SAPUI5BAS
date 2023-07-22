@@ -6,7 +6,8 @@ sap.ui.define([
     return oBaseController.extend("home.controller.login",{
         //oView,
         onInit:function(){
-            //this.oView.byId("inputUserName").setValue(this.sName);
+            //alert(this.sName);
+            this.oView.byId("inputUserName").setValue(this.sName);
         },
         onLogin : function(){
             console.log(oController);
