@@ -1,9 +1,13 @@
 <mvc:View   controllerName="home.controller.login"
             xmlns:mvc="sap.ui.core.mvc"
+            xmlns:form="sap.ui.layout.form"
             xmlns="sap.m">
+    <form:SimpleForm editable="true">
     <Label text="User Name"/>
-    <Input id="inputUserName"/>
+    <Input id="inputUserName" width="40%"/>
     <Label text="Password"/>
-    <Input id="inputPassword" type="Password" submit="onLogin"/>
-    <Button id="buttonLogin" text="Login" press="onLogin"/>
+    <Input id="inputPassword" type="Password" submit="onLogin" width="40%"/>
+    <Label/>
+    <Button id="buttonLogin" text="Login" press="onLogin" type="Emphasized" width="40%"/>
+    </form:SimpleForm>
 </mvc:View>

@@ -5,9 +5,9 @@ sap.ui.define([
     'use strict';
     return oBaseController.extend("home.controller.login",{
         //oView,
-        //onInit:function(){
-        //    this.oView = this.getView();
-        //},
+        onInit:function(){
+            //this.oView.byId("inputUserName").setValue(this.sName);
+        },
         onLogin : function(){
             console.log(oController);
             console.log(oBaseController);
