@@ -1,0 +1,17 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+          xmlns:form="sap.ui.layout.form"
+          controllerName="home.controller.main"
+          xmlns="sap.m">
+    <form:SimpleForm editable="true">
+        <Label text="Employee Id"/>
+        <Input id="inputEmployeeId" value="{/empStr/empId}"/>
+        <Label text="Employee Name"/>
+        <Input id="inputEmployeeName" value="{path : '/empStr/empName'}"/>
+        <Label text="Salary"/>
+        <Input id="inputSalary"/>
+        <Label text="Currency"/>
+        <Input id="inputCurrency"/>
+        <Label/>
+        <Button text="Click Me"/>
+    </form:SimpleForm>
+</mvc:View>
