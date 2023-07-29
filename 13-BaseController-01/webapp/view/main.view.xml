@@ -1,5 +1,5 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
-          controllerName="home.main"
+          controllerName="home.controller.main"
           xmlns="sap.m">
     <Label text="Testing Base Controller"/>
     <Input placeholder="How are you doing today?"/>
