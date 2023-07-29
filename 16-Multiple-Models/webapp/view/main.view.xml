@@ -4,13 +4,13 @@
           xmlns="sap.m">
     <form:SimpleForm id="simpleForm" editable="true" width="50%" title="Employee Details">
         <Label text="Employee Id"/>
-        <Input id="inputEmpId" value="{/empStr/empId}" enabled="{/empStr/enabled}"/>
+        <Input id="inputEmpId" value="{demo>/empStr/empId}" enabled="{/empStr/enabled}"/>
         <Label text="Employee Name"/>
-        <Input id="inputEmployeeName" value = "{path:'/empStr/empName'}" enabled="{/empStr/enabled}"/>
+        <Input id="inputEmployeeName" value = "{path:'demo>/empStr/empName'}" enabled="{/empStr/enabled}"/>
         <Label text="Salary"/>
-        <Input id="inputSalary" enabled="{/empStr/enabled}"/>
+        <Input id="inputSalary" enabled="{demo>/empStr/enabled}"/>
         <Label text="Currency"></Label>
-        <Input id="inputCurrency" enabled="{/empStr/enabled}" ></Input>
+        <Input id="inputCurrency" enabled="{demo>/empStr/enabled}" ></Input>
         <Label ></Label>
         <Button id="buttonClick" text="Click Me" press="onClick" ></Button>
     </form:SimpleForm>

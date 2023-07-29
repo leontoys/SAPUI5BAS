@@ -5,10 +5,10 @@ sap.ui.define([
     //this is a model.js file
     return {
         //create functions to create models
-        createModel : function(){
+        createModel : function(path){
             var oModel = new JSONModel();
             //set data
-            oModel.setData({
+/*             oModel.setData({
                 "empStr":{
                     "empId" : "100",
                     "empName" : "Alan",
@@ -16,7 +16,10 @@ sap.ui.define([
                     "currency" : "AUD",
                     "enabled" : false
                 }
-            });
+            }); */
+            oModel.loadData(path);
+            //oModel.loadData("model/mockData/sample.json");//note the path !! 
+            console.log(oModel);
             //add a return
             return oModel; // and that makes it work !
         }

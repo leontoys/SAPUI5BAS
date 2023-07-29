@@ -19,13 +19,26 @@ sap.ui.define([
                 "enabled" : false
             }
         }); */
-        var oModel = Model.createModel();
+        //var oModel = Model.createModel();
+        var oSample  = Model.createModel("model/mockData/sample.json");
+        var oDemo  = Model.createModel("model/mockData/demo.json");
         //set model to the core
-        sap.ui.getCore().setModel(oModel);
-        //Binding-2 xml syntaxes are in XML, now let us look at JS syntaxes
+        sap.ui.getCore().setModel(oSample);
+        sap.ui.getCore().setModel(oDemo,"demo");//name this
+/*         //Binding-2 xml syntaxes are in XML, now let us look at JS syntaxes
         this.getView().byId("inputSalary").bindValue("/empStr/salary");
         this.getView().byId("inputCurrency").bindProperty("value","/empStr/currency");
-        //this.getView().byId("simpleForm").bindProperty("enabled","/empStr/enabled");
+        //this.getView().byId("simpleForm").bindProperty("enabled","/empStr/enabled"); */
+
+        this._bindValue();//the data-binding will happen here
+
+        },
+        //create a new function - for JS based binding
+        _bindValue:function(){
+         //Binding-2 xml syntaxes are in XML, now let us look at JS syntaxes
+        this.getView().byId("inputSalary").bindValue("/empStr/salary");
+        this.getView().byId("inputCurrency").bindProperty("value","/empStr/currency");
+        //this.getView().byId("simpleForm").bindProperty("enabled","/empStr/enabled");           
         },
 
         //on button click

@@ -1,0 +1,9 @@
+{
+    "empStr":{
+        "empId" : "200",
+        "empName" : "Bob",
+        "salary" : 20000,
+        "currency" : "AUD",
+        "enabled" : false
+    }
+}
