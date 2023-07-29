@@ -4,9 +4,9 @@
           xmlns="sap.m">
     <form:SimpleForm editable="true" width="50%">
         <Label text="Employee Id"/>
-        <Input id="inputEmpId"/>
+        <Input id="inputEmpId" value="{/empStr/empId}"/>
         <Label text="Employee Name"/>
-        <Input id="inputEmployeeName"/>
+        <Input id="inputEmployeeName" value = "{path:'/empStr/empName'}"/>
         <Label text="Salary"/>
         <Input id="inputSalary"/>
         <Label text="Currency"></Label>
