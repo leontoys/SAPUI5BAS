@@ -2,16 +2,16 @@
           controllerName="home.controller.main"
           xmlns:form="sap.ui.layout.form"
           xmlns="sap.m">
-    <form:SimpleForm editable="true" width="50%">
+    <form:SimpleForm id="simpleForm" editable="true" width="50%" title="Employee Details">
         <Label text="Employee Id"/>
-        <Input id="inputEmpId" value="{/empStr/empId}"/>
+        <Input id="inputEmpId" value="{/empStr/empId}" enabled="{/empStr/enabled}"/>
         <Label text="Employee Name"/>
-        <Input id="inputEmployeeName" value = "{path:'/empStr/empName'}"/>
+        <Input id="inputEmployeeName" value = "{path:'/empStr/empName'}" enabled="{/empStr/enabled}"/>
         <Label text="Salary"/>
-        <Input id="inputSalary"/>
+        <Input id="inputSalary" enabled="{/empStr/enabled}"/>
         <Label text="Currency"></Label>
-        <Input id="inputCurrency"></Input>
+        <Input id="inputCurrency" enabled="{/empStr/enabled}" ></Input>
         <Label ></Label>
-        <Button id="buttonClick" text="Click Me"></Button>
+        <Button id="buttonClick" text="Click Me" press="onClick" ></Button>
     </form:SimpleForm>
 </mvc:View>
