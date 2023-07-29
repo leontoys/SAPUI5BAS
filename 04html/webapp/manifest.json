@@ -1,0 +1,11 @@
+{
+    "sap.app": {
+        "id": "anubhav",
+        "type": "application",
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.10.1",
+            "toolsId": "827fc93a-d59a-4004-9163-0b1111c9adc8"
+        }
+    }
+}
