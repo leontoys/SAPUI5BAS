@@ -45,11 +45,11 @@
             </table:Column>
             <table:Column label="Marital Status"> <!--Label is default aggreegation-->
                 <table:template>
-                    <Select forceSelection="false"
-                            items="{path:'/empTab',
-                                    sorter:{path:'mStatus'}}"
-                     >
-                     <core:Item key="{mStatus}" text="{mStatus}" />
+                    <Select selectedKey="{mStatus}">
+                    <items>
+                     <core:Item key="s" text="single" />                        
+                     <core:Item key="m" text="married" />
+                     </items>
                      </Select>
                 </table:template>
             </table:Column>
