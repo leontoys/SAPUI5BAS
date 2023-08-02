@@ -1,0 +1,37 @@
+{
+    "empStr" : {
+        "empId" : "1000",
+        "empName" : "Alan Turing",
+        "salary" : 10000,
+        "currency" : "AUD"
+    },
+    "empTab" : [
+        {
+            "empId" : "1000",
+            "empName" : "Alan Turing",
+            "salary" : 10000,
+            "currency" : "AUD",
+            "smoker" : true,
+            "rating" : 5,
+            "mStatus" : "single"
+        },
+        {
+            "empId" : "2000",
+            "empName" : "Bjarne Stroustrup",
+            "salary" : 5000,
+            "currency" : "AUD",
+            "smoker" : false,
+            "rating" : 3,
+            "mStatus" : "married"
+        },
+        {
+            "empId" : "3000",
+            "empName" : "Charles Babbage",
+            "salary" : 6000,
+            "currency" : "AUD",
+            "smoker" : false,
+            "rating" : 5,
+            "mStatus" : "married"
+        }
+    ]
+}
