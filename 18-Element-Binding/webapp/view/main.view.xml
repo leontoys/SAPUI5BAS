@@ -1,0 +1,61 @@
+<mvc:XMLView xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" 
+             xmlns:form="sap.ui.layout.form"
+             xmlns:table="sap.ui.table"
+             controllerName="sap.ui.demo.controller.main"
+             xmlns="sap.m">
+    <form:SimpleForm id="simpleFormEmployees" editable="true">
+        <Label text="Employee Id"></Label>
+        <Input value="{empId}"/>
+        <Label text="Employee Name"></Label>
+        <Input value="{empName}" />
+        <Label text="Salary"></Label>
+        <Input value="{salary}" />
+        <Label text="Currency"></Label>
+        <Input value="{currency}" />
+        <Label ></Label>
+        <Button text="Click Me"></Button>
+    </form:SimpleForm>
+    <table:Table id="tableEmployees" rows="{/empTab}" alternateRowColors="true" enableSelectAll="false"
+    selectionMode="Single" rowSelectionChange="onSelect">
+        <table:columns>
+            <table:Column label="Employee Id">
+                <table:template>
+                    <Text text="{empId}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column label="Employee Name">
+                <table:template>
+                    <Input value="{empName}"></Input>
+                </table:template>
+            </table:Column>
+            <table:Column label="Salary">
+                <table:template>
+                    <Text text="{salary} {currency}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column label="Smoker">
+                <table:template>
+                    <CheckBox selected="{smoker}"></CheckBox>
+                </table:template>
+            </table:Column>
+            <table:Column label="Rating">
+                <table:template>
+                    <RatingIndicator value="{rating}"></RatingIndicator>
+                </table:template>
+            </table:Column>
+            <table:Column label="Gender">
+                <table:template>
+                    <Image src="{gender}" height="20%" width="20%"></Image>
+                </table:template>
+            </table:Column>
+            <table:Column label="Marital Status">
+                <table:template>
+                    <Select selectedKey="{mStatus}">
+                        <core:Item key="s" text="Single"></core:Item>
+                        <core:Item key="m" text="Married"></core:Item>
+                    </Select>
+                </table:template>
+            </table:Column>
+        </table:columns>
+    </table:Table>
+</mvc:XMLView>
