@@ -1,14 +1,14 @@
 {
     "empStr" : {
         "empId" : "1000",
-        "empName" : "Bob Marley",
+        "empName" : "Alan Turing",
         "salary" : 10000,
         "currency" : "AUD"
     },
     "empTab" : [
         {
             "empId" : "1000",
-            "empName" : "Bob Dylan",
+            "empName" : "Alan Turing",
             "salary" : 10000,
             "currency" : "AUD",
             "smoker" : true,
@@ -18,17 +18,17 @@
         },
         {
             "empId" : "2000",
-            "empName" : "John Lennon",
+            "empName" : "Bjarne Stroustrup",
             "salary" : 5000,
             "currency" : "AUD",
             "smoker" : false,
             "rating" : 3,
-            "mStatus" : "m",
+            "mStatus" : "ma",
             "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
         },
         {
             "empId" : "3000",
-            "empName" : "Leonard Cohen",
+            "empName" : "Charles Babbage",
             "salary" : 6000,
             "currency" : "AUD",
             "smoker" : false,
@@ -38,7 +38,7 @@
         },
         {
             "empId" : "4000",
-            "empName" : "Jean Boez",
+            "empName" : "Ada Lovelace",
             "salary" : 6000,
             "currency" : "AUD",
             "smoker" : false,

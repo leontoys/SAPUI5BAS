@@ -19,6 +19,10 @@ sap.ui.define([
             var oSimpleForm = this.getView().byId("simpleFormEmployees");
             //bind the path to the element
             oSimpleForm.bindElement(sPath);
+        },
+        //on change of switch
+        onSwitch:function(){
+
         }
     });
 });
