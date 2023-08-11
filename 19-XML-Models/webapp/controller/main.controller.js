@@ -9,7 +9,13 @@ sap.ui.define([
             sap.ui.getCore().setModel(oModel);
             var oDemo = Model.createModel("model/mockData/demo.json");
             sap.ui.getCore().setModel(oDemo,"demo");
-            
+            var oXMLModel = Model.createXMLModel("model/mockData/dummy.xml");
+            sap.ui.getCore().setModel(oXMLModel,"xml");
+            var oTable = this.getView().byId("tableEmployees");
+            //oTable.bindRows("/empTab");
+            oTable.bindAggregation("rows",{path:'/empTab'});
+            var i18nModel = Model.createResourceModel("i18n/i18n.properties");
+            sap.ui.getCore().setModel(i18nModel,"i18n");
 
 /*             //alert("main controller loaded");
             //create json model object

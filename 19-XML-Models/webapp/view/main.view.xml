@@ -13,10 +13,11 @@
         <Label text="Currency"></Label>
         <Input value="{currency}"></Input>
         <Label ></Label>
-        <Button text="Click Me"></Button>
+        <Button text="{i18n>XBUT_CLICKME}"></Button>
         <Switch change="onSwitch" ></Switch>
     </form:SimpleForm>
-    <table:Table selectionMode="Single" rows="{/empTab}" rowSelectionChange="onSelect">
+    <!--<table:Table selectionMode="Single" rows="{/empTab}" rowSelectionChange="onSelect">-->
+    <table:Table id="tableEmployees" selectionMode="Single" rowSelectionChange="onSelect">
         <!-- <table:columns> -->
             <table:Column label="Employee Id" >
                 <table:template>
@@ -38,6 +39,7 @@
             <table:Column label="Smoker">
                 <table:template>
                     <CheckBox selected="{smoker}"></CheckBox>
+                    <!--<CheckBox selected="{=${smoker}==='true'?true:false}"></CheckBox>-->
                 </table:template>
             </table:Column>
             <table:Column label="Rating">

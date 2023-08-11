@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <empStr>
+    <empId>99199</empId>
+    <empName>Lionel Messi</empName>
+    <salary>10000000000</salary>
+    <currency>AUD</currency>
+  </empStr>
+  <empTab>
+    <empId>189393</empId>
+    <empName>Lionel Messi</empName>
+    <salary>100000000</salary>
+    <currency>AUD</currency>
+    <smoker>true</smoker>
+    <rating>5</rating>
+    <mStatus>s</mStatus>
+    <gender>https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png</gender>
+  </empTab>
+  <empTab>
+    <empId>3737474</empId>
+    <empName>AR Rahman</empName>
+    <salary>777777</salary>
+    <currency>AUD</currency>
+    <smoker>false</smoker>
+    <rating>3</rating>
+    <mStatus>m</mStatus>
+    <gender>https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png</gender>
+  </empTab>
+  <empTab>
+    <empId>37337373</empId>
+    <empName>Sachin Tendulkar</empName>
+    <salary>333333</salary>
+    <currency>AUD</currency>
+    <smoker>false</smoker>
+    <rating>5</rating>
+    <mStatus>m</mStatus>
+    <gender>https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png</gender>
+  </empTab>
+  <empTab>
+    <empId>686686</empId>
+    <empName>Andre Agassi</empName>
+    <salary>222222</salary>
+    <currency>AUD</currency>
+    <smoker>false</smoker>
+    <rating>5</rating>
+    <mStatus>s</mStatus>
+    <gender>https://www.freeiconspng.com/uploads/female-icon-6.png</gender>
+  </empTab>
+</root>
