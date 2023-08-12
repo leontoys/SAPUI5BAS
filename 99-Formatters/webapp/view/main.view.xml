@@ -1,0 +1,70 @@
+<mvc:XMLView xmlns:core="sap.ui.core" xmlns="sap.m" 
+             controllerName="sap.ui.demo.controller.main"
+             xmlns:table="sap.ui.table" 
+             xmlns:form="sap.ui.layout.form" 
+             xmlns:mvc="sap.ui.core.mvc" >
+    <form:SimpleForm editable="true" id="simpleFormEmployee">
+        <Label text="Employee Id"></Label>
+        <Input value="{empId}"></Input>
+        <Label text="Employee Name"></Label>
+        <!-- <Input value="{empName}"></Input> -->
+         <Input value="{path:'empName',formatter:'.formatter.changeToUpperCase'}"></Input>
+        <Label text="Salary"></Label>
+        <!-- <Input value="{salary}"></Input> -->
+                     <Text text="{parts:[{ path:'salary'},{path:'currency'}],
+                                  formatter:'.formatter.formatCurrency'}"></Text>
+        <Label text="Currency"></Label>
+        <Input value="{currency}"></Input>
+        <Label ></Label>
+        <Button text="{i18n>XBUT_CLICKME}"></Button>
+        <Switch change="onSwitch" ></Switch>
+    </form:SimpleForm>
+    <table:Table id="tableEmployees" selectionMode="Single" rows="{/empTab}" rowSelectionChange="onSelect">
+    <!--<table:Table id="tableEmployees" selectionMode="Single" rowSelectionChange="onSelect">-->
+        <!-- <table:columns> -->
+            <table:Column label="Employee Id" >
+                <table:template>
+                    <Text text="{empId}"></Text>
+                </table:template>
+            </table:Column>
+        <!-- </table:columns> -->
+        <table:columns>
+            <table:Column label="Employee Name" >
+                <table:template>
+                   <Input value="{empName}"></Input>
+                </table:template>
+            </table:Column>
+            <table:Column label="Salary">
+                <table:template>
+                     <Text text="{salary}{currency}"></Text>
+                </table:template>
+            </table:Column>
+            <table:Column label="Smoker">
+                <table:template>
+                    <CheckBox selected="{smoker}"></CheckBox>
+                    <!--<CheckBox selected="{=${smoker}==='true'?true:false}"></CheckBox>-->
+                </table:template>
+            </table:Column>
+            <table:Column label="Rating">
+                <table:template>
+                    <RatingIndicator value="{rating}"></RatingIndicator>
+                </table:template>
+            </table:Column>
+            <table:Column label="Marital Status">
+                <table:template>
+                    <Select selectedKey="{mStatus}">
+                        <items>
+                            <core:Item key="m" text="Married"></core:Item>
+                            <core:Item key="s" text="Single"></core:Item>
+                        </items>
+                    </Select>
+                </table:template> 
+            </table:Column>
+            <table:Column label="Gender">
+                <table:template>
+                    <Image src="{gender}" height="20%" width="20%"></Image>
+                </table:template>
+            </table:Column>
+        </table:columns>
+    </table:Table>
+</mvc:XMLView>

@@ -1,0 +1,50 @@
+{
+    "empStr" : {
+        "empId" : "99199",
+        "empName" : "Bob Marley",
+        "salary" : 111111,
+        "currency" : "AUD"
+    },
+    "empTab" : [
+        {
+            "empId" : "189393",
+            "empName" : "Bob Dylan",
+            "salary" : 55555,
+            "currency" : "AUD",
+            "smoker" : true,
+            "rating" : 5,
+            "mStatus" : "s",
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+        },
+        {
+            "empId" : "3737474",
+            "empName" : "John Lennon",
+            "salary" : 777777,
+            "currency" : "AUD",
+            "smoker" : false,
+            "rating" : 3,
+            "mStatus" : "m",
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+        },
+        {
+            "empId" : "37337373",
+            "empName" : "Leonard Cohen",
+            "salary" : 333333,
+            "currency" : "AUD",
+            "smoker" : false,
+            "rating" : 5,
+            "mStatus" : "m",
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+        },
+        {
+            "empId" : "686686",
+            "empName" : "Jean Boez",
+            "salary" : 222222,
+            "currency" : "AUD",
+            "smoker" : false,
+            "rating" : 5,
+            "mStatus" : "s",
+            "gender" : "https://www.freeiconspng.com/uploads/female-icon-6.png"
+        }
+    ]
+}
