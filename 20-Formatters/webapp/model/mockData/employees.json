@@ -14,7 +14,8 @@
             "smoker" : true,
             "rating" : 5,
             "mStatus" : "s",
-            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png",
+            "eStatus" : "T"
         },
         {
             "empId" : "2000",
@@ -24,7 +25,8 @@
             "smoker" : false,
             "rating" : 3,
             "mStatus" : "ma",
-            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png",
+            "eStatus" : "E"
         },
         {
             "empId" : "3000",
@@ -34,7 +36,8 @@
             "smoker" : false,
             "rating" : 5,
             "mStatus" : "m",
-            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png"
+            "gender" : "https://www.freeiconspng.com/thumbs/male-icon/male-icon-32.png",
+            "eStatus" : "E"
         },
         {
             "empId" : "4000",
@@ -44,7 +47,8 @@
             "smoker" : false,
             "rating" : 5,
             "mStatus" : "s",
-            "gender" : "https://www.freeiconspng.com/uploads/female-icon-6.png"
+            "gender" : "https://www.freeiconspng.com/uploads/female-icon-6.png",
+            "eStatus" : "T"
         }
     ]
 }

@@ -1,9 +1,11 @@
 sap.ui.define([
 "sap/ui/demo/controller/baseController",
-"sap/ui/demo/model/model"
-], function(BaseController,Model) {
+"sap/ui/demo/model/model",
+"../model/formatter"
+], function(BaseController,Model,formatter) {
     'use strict';
     return BaseController.extend("sap.ui.demo.controller.main",{
+        formatter : formatter,
         onInit:function(){
             var oModel = Model.createJSONModel("model/mockData/employees.json");
             sap.ui.getCore().setModel(oModel);

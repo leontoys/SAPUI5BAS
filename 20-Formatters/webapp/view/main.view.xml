@@ -56,6 +56,11 @@
                 <Image src="{gender}" height="20%" width="20%"></Image>
             </table:template>
         </table:Column>
+        <table:Column label="{i18n>XLBL_ESTATUS}">
+            <table:template>
+                <Text text="{eStatus}"></Text>
+            </table:template>
+        </table:Column>
         </table:columns>
     </table:Table>
 </mvc:XMLView>
