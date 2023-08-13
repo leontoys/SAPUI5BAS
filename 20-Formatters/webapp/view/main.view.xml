@@ -15,6 +15,11 @@
         <Switch id="switchModel" change="onSwitch"></Switch>
     </form:SimpleForm>
     <table:Table id="tableEmployees" selectionMode="Single" rowSelectionChange="onSelect">
+        <table:extension>
+            <Toolbar >
+                <Button icon="sap-icon://delete" press="onDelete"></Button>
+            </Toolbar>
+        </table:extension>
         <table:columns>
         <table:Column label="{i18n>XLBL_EMPID}">
             <table:template>
@@ -23,12 +28,15 @@
         </table:Column>
         <table:Column label="{i18n>XLBL_EMPNAME}">
             <table:template>
-                <Input value="{empName}"></Input>
+                <Input value="{path:'empName',
+                               formatter:'.changeNameToUpperCase'}"></Input>
             </table:template>
         </table:Column>
         <table:Column label="{i18n>XLBL_SALARY}">
             <table:template>
-                <Text text="{salary}"></Text>
+                <!-- <Text text="{salary} {currency}"></Text> -->
+                <Text text="{parts:[{path:'salary'},{path:'currency'}],
+                            formatter:'.formatter.formatCurrency'}"></Text>
             </table:template>
         </table:Column>
         <table:Column label="{i18n>XLBL_SMOKER}">
@@ -58,7 +66,8 @@
         </table:Column>
         <table:Column label="{i18n>XLBL_ESTATUS}">
             <table:template>
-                <Text text="{eStatus}"></Text>
+                <ObjectStatus text="{path:'eStatus',formatter:'.formatter.statusText'}"
+                              state="{path:'eStatus',formatter:'.formatter.statusColor'}"></ObjectStatus>
             </table:template>
         </table:Column>
         </table:columns>

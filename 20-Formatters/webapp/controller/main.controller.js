@@ -38,7 +38,26 @@ sap.ui.define([
             sap.ui.getCore().setModel(oDemo);
             //set default model to demo
             sap.ui.getCore().setModel(oModel,"demo");
+        },
+        //formatter -- move this to formatter file
+        changeNameToUpperCase:function(input){
+            if(input){
+                console.log('formatter');
+                return input.toUpperCase();
+            }
+        },
+        //on selecting and deleting record
+        onDelete:function(oEvent){
+            //get model
+            var oModel = sap.ui.getCore().getModel();
+            //get all rows
+            var aRows = oModel.getProperty("/empTab");
+            //get selected index
+            var sIndex = this.getView().byId("tableEmployees").getSelectedIndices()[0];
+            aRows.splice(sIndex,1);
+            oModel.setProperty("/empTab",aRows);
         }
+            
     });
     
 });
