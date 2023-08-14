@@ -1,3 +1,4 @@
-<mvc:XMLView xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc" >
-    <m:Text text="hello world"></m:Text>
+<mvc:XMLView xmlns="sap.m" controllerName="sap.ui.demo.controller.App"
+             xmlns:mvc="sap.ui.core.mvc" >
+    <Text text="hello world"></Text>
 </mvc:XMLView>
