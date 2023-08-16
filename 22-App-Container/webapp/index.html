@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>22-App-Container</title>
+    </head>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-bindingSyntax="complex"
+                data-sap-ui-resourceroots='{
+                    "sap.ui.demo" : "./"
+                }'
+        ></script>
+        <script>
+            //container for Component Container - from Component.js file
+            var oComponentContainer = new sap.ui.core.ComponentContainer({
+                name : "sap.ui.demo"
+            });
+            oComponentContainer.placeAt("content");
+        </script>
+    <body>
+        <div id="content"></div>
+    </body>
+</html>
