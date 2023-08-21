@@ -1,0 +1,11 @@
+<mvc:XMLView id = "View1"
+            xmlns="sap.m" 
+            xmlns:mvc="sap.ui.core.mvc" >
+    <Page >
+        <headerContent>
+            <Button icon="sap-icon://action" press="goNext"></Button>
+        </headerContent>
+        <Text text="{default>/text}"></Text>
+        <Button id="buttonNext" text="Go To Next Page" press="goNext"></Button>
+    </Page>
+</mvc:XMLView>
