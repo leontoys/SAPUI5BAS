@@ -2,7 +2,8 @@
             controllerName="sap.ui.demo.controller.View2"
             xmlns="sap.m" 
             xmlns:mvc="sap.ui.core.mvc" >
-    <Page >
-        <Button id="buttonBack" text="Go Back "></Button>
+    <Page showNavButton="true" navButtonPress="goBack">
+        <Button id="buttonBack" text="Go To Back Page" press="goBack"></Button>
+        <Button id="buttonHook" text="Hook Methods"></Button>
     </Page>
 </mvc:XMLView>

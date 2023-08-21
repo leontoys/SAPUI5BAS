@@ -1,0 +1,11 @@
+<mvc:XMLView xmlns:form="sap.ui.layout.form" controllerName="sap.ui.demo.controller.View1"
+             xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <form:SimpleForm editable="true">
+        <Label text="User Id"></Label>
+        <Input id="inputUserId"></Input>
+        <Label text="Password"></Label>
+        <Input id="inputPassword"></Input>
+        <Label ></Label>
+        <Button id="buttonLogin" text="Login" press="onLogin"></Button>
+    </form:SimpleForm>
+</mvc:XMLView>

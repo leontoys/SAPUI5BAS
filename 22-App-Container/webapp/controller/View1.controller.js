@@ -8,6 +8,9 @@ sap.ui.define([
             var oAppContainer = this.getView().getParent();
             debugger;
             oAppContainer.to("View2");
+        },
+        onAfterRendering:function(){
+            $("#View1--buttonNext").hide(function(){$(this).fadeIn(5000)});
         }
     });
 });

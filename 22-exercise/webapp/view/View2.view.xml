@@ -1,0 +1,6 @@
+<mvc:XMLView xmlns:form="sap.ui.layout.form" controllerName="sap.ui.demo.controller.View2"
+             xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page>
+        <Image src="https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg"></Image>
+    </Page>
+</mvc:XMLView>
