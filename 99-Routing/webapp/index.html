@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>24-Routing</title>
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_horizon"
+                data-sap-ui-bindingSyntx="complex"
+                data-sap-ui-resourceroots='{
+                    "sap.ui.demo" : "./"
+                }'
+        ></script>
+        <script>
+            //now we have to link component.js
+            var oComponentContainer = new sap.ui.core.ComponentContainer({
+                name : "sap.ui.demo"
+            });
+            oComponentContainer.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>
