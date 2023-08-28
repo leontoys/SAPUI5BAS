@@ -20,6 +20,7 @@ sap.ui.define([
             UIComponent.prototype.init.apply(this);
             this.oRouter = this.getRouter();
             this.oRouter.initialize();
+            console.log(this.oRouter);
         }
 /*        ,
          createContent:function(){

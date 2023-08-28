@@ -80,19 +80,28 @@
 	},
 	"sap.ui5": {
 		"_version": "1.1.0",
-		"rootView" : {
+		"rootView": {
 			"viewName": "sap.ui.demo.view.App",
 			"type": "XML"
 		},
-		"routing":{
-			"config" : {
+		"routing": {
+			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewPath": "sap.ui.demo.view",
-				"viewType": "XML"
+				"viewType": "XML",
+				"controlId": "app"
 			},
-			"routes" : [],
-			"targets" : {
-				
+			"routes": [{
+				"pattern": "",
+				"name": "home",
+				"target": "overview"
+			}],
+			"targets": {
+				"overview": {
+					"viewName": "View1",
+					"viewId": "View1",
+					"controlAggregation": "pages"
+				}
 			}
 		},
 		"dependencies": {
