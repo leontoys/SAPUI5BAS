@@ -80,6 +80,21 @@
 	},
 	"sap.ui5": {
 		"_version": "1.1.0",
+		"rootView" : {
+			"viewName": "sap.ui.demo.view.App",
+			"type": "XML"
+		},
+		"routing":{
+			"config" : {
+				"routerClass": "sap.m.routing.Router",
+				"viewPath": "sap.ui.demo.view",
+				"viewType": "XML"
+			},
+			"routes" : [],
+			"targets" : {
+				
+			}
+		},
 		"dependencies": {
 			"minUI5Version": "1.38.1",
 			"libs": {

@@ -18,8 +18,11 @@ sap.ui.define([
         init:function(){
             //call base class constructor? looks so
             UIComponent.prototype.init.apply(this);
-        },
-        createContent:function(){
+            this.oRouter = this.getRouter();
+            this.oRouter.initialize();
+        }
+/*        ,
+         createContent:function(){
             //now here we need to look for App view and return it
             //so lets create app view
             var oAppView = new sap.ui.view("AppView",{
@@ -38,6 +41,6 @@ sap.ui.define([
             //now go back to the metadata section and link manifest.json file
 
             return oAppView;
-        }
-    });
+        }*/
+    }); 
 });
