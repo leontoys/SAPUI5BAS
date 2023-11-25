@@ -91,15 +91,26 @@
 				"viewType": "XML",
 				"controlId": "app"
 			},
-			"routes": [{
+			"routes": [
+				{
 				"pattern": "",
 				"name": "home",
 				"target": "overview"
-			}],
+			},{
+			"pattern": "detail",
+			"name": "next",
+			"target": "more"
+		}
+		],
 			"targets": {
 				"overview": {
 					"viewName": "View1",
 					"viewId": "View1",
+					"controlAggregation": "pages"
+				},
+				"more":{
+					"viewName": "View2",
+					"viewId": "View2",
 					"controlAggregation": "pages"
 				}
 			}
@@ -147,7 +158,7 @@
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
-				"uri": "i18n/texts.properties"
+				"uri": "i18n/i18n.properties"
 			}
 		},
 		"config": {

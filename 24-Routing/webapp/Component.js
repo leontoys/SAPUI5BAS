@@ -17,9 +17,9 @@ sap.ui.define([
         },
         init:function(){
             //call base class constructor? looks so
-            UIComponent.prototype.init.apply(this);
+            UIComponent.prototype.init.apply(this);//to initialise the UIcomponent
             this.oRouter = this.getRouter();
-            this.oRouter.initialize();
+            this.oRouter.initialize();//initializing the router
             console.log(this.oRouter);
         }
 /*        ,
