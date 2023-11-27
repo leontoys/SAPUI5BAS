@@ -1,0 +1,9 @@
+<mvc:XMLView    id="View2" xmlns="sap.m" 
+                controllerName="sap.ui.demo.controller.View2"
+                xmlns:mvc="sap.ui.core.mvc" >
+    <Page showNavButton="true" navButtonPress=".onBack" >
+        <ObjectHeader id="fruitDetails" 
+                      title="{name}" number="{price}" icon="{image}"
+        ></ObjectHeader>
+    </Page>
+</mvc:XMLView>
