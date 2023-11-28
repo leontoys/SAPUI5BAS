@@ -5,5 +5,6 @@ It has pages aggregation to which we will add other views
  -->
 <mvc:XMLView    xmlns="sap.m" 
                 xmlns:mvc="sap.ui.core.mvc" >
-    <App id="app" ></App>
+    <!--<App id="app" ></App> -->
+    <SplitApp id="app"></SplitApp>
 </mvc:XMLView>

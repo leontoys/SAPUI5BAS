@@ -6,7 +6,8 @@ Even if that is not added it works though, it just adds that ugly blue rectangle
                 xmlns:mvc="sap.ui.core.mvc" >
     <Page >
         <SearchField id="searchField" search="onSearch" ></SearchField>
-        <List id="idList" items="{/fruits}" itemPress="onItemPress" delete="onDelete" mode="Delete" >
+        <List id="idList" items="{/fruits}" itemPress="onItemPress">
+        <!-- delete="onDelete" mode="Delete" >!-->
             <items>
                 <ObjectListItem title="{name}" icon="{image}" number="{price}" 
                                  type="Active">

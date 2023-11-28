@@ -95,23 +95,28 @@
 				{
 				"pattern": "",
 				"name": "home",
-				"target": "overview"
+				"target": ["overview","blank"]
 			},{
 			"pattern": "fruit/{fruitId}",
 			"name": "next",
-			"target": "more"
+			"target": ["overview","more"]
 		}
 		],
 			"targets": {
 				"overview": {
 					"viewName": "View1",
 					"viewId": "View1",
-					"controlAggregation": "pages"
+					"controlAggregation": "masterPages"
 				},
 				"more":{
 					"viewName": "View2",
 					"viewId": "View2",
-					"controlAggregation": "pages"
+					"controlAggregation": "detailPages"
+				},
+				"blank":{
+					"viewName": "Blank",
+					"viewId": "Blank",
+					"controlAggregation": "detailPages"
 				}
 			}
 		},

@@ -1,9 +1,51 @@
 <mvc:XMLView    id="View2" xmlns="sap.m" 
                 controllerName="sap.ui.demo.controller.View2"
+                xmlns:f="sap.ui.layout.form"
                 xmlns:mvc="sap.ui.core.mvc" >
     <Page showNavButton="true" navButtonPress=".onBack" >
         <ObjectHeader id="fruitDetails" 
                       title="{name}" number="{price}" icon="{image}"
         ></ObjectHeader>
+	<IconTabBar
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter icon="sap-icon://hint" key="info">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Details"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text="Fruit" />
+				<Text id="nameText" text="{name}" />
+				<Label text="Price" />
+				<Text text="{price}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+			</IconTabFilter>
+			<IconTabFilter icon="sap-icon://group" key="suppliers">
+				<Text text="Suppliers" />
+			</IconTabFilter>
+            <IconTabFilter icon="sap-icon://globe" key="cities" >
+                <Text text="Cities"></Text>
+            </IconTabFilter>
+		</items>
+	</IconTabBar>
     </Page>
 </mvc:XMLView>
