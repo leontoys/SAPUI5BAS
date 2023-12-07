@@ -1,0 +1,39 @@
+<mvc:XMLView    id="View2" xmlns="sap.m" 
+				xmlns:core="sap.ui.core"
+                controllerName="sap.ui.demo.controller.View2"
+                xmlns:f="sap.ui.layout.form"
+                xmlns:mvc="sap.ui.core.mvc" >
+    <Page showNavButton="true" navButtonPress=".onBack" >
+        <ObjectHeader id="fruitDetails" 
+                      title="{name}" number="{price}" icon="{image}"
+        ></ObjectHeader>
+	<IconTabBar
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter icon="sap-icon://hint" key="info">
+	<VBox class="sapUiSmallMargin">
+		<core:Fragment fragmentName="sap.ui.demo.fragments.AdditionalData" type="XML">
+		</core:Fragment>
+	</VBox>
+			</IconTabFilter>
+			<IconTabFilter icon="sap-icon://group" key="suppliers">	
+				<core:Fragment fragmentName="sap.ui.demo.fragments.Supplier" type="XML">
+				</core:Fragment>
+			</IconTabFilter>
+            <IconTabFilter icon="sap-icon://globe" key="cities" >
+                <core:Fragment fragmentName="sap.ui.demo.fragments.Cities" type="XML">
+				</core:Fragment>
+            </IconTabFilter>
+		</items>
+	</IconTabBar>
+	<footer>
+		<Toolbar >
+			<ToolbarSpacer >
+			</ToolbarSpacer>
+			<Button text="Save" icon="sap-icon//save" press="onSave"></Button>
+		</Toolbar>
+	</footer>
+    </Page>
+</mvc:XMLView>
