@@ -55,7 +55,8 @@
         "sap.ui.comp": {},
         "sap.ui.generic.app": {},
         "sap.ui.table": {},
-        "sap.ushell": {}
+        "sap.ushell": {},
+        "sap.uxap": {}
       }
     },
     "contentDensities": {
@@ -69,7 +70,7 @@
           "bundleName": "sap.ui.demo.fiori2.projectmasterdetail.i18n.i18n"
         }
       },
-      "": {
+      "products": {
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
