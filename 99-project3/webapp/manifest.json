@@ -96,7 +96,7 @@
 				"routerClass": "sap.f.routing.Router",
 				"type": "View",
 				"viewType": "XML",
-				"path": "sap.f.FlexibleColumnLayoutWithTwoColumnStart.view",
+				"path": "demo.sap.com.project3.view",
 				"controlId": "fcl",
 				"transition": "slide",
 				"bypassed": {
@@ -126,7 +126,7 @@
       "viewName": "demo.sap.com.project3.view.FlexibleColumnLayout",
       "type": "XML",
       "async": true,
-      "id": "App"
+      "id": "fcl"
     }
   }
 }

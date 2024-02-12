@@ -9,7 +9,7 @@ sap.ui.define([
 
         return Controller.extend("sap.ui.demo.fiori2.projectmasterdetail.controller.List", {
             onInit: function () {
-
+                debugger;
             }
         });
     });
